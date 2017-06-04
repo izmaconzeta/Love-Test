@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Love-Test - colors.xml
+  ~ Create by Izma R. Ramirez - sulisu.co on 4/06/17 02:06 AM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~ Last modified date 4/06/17 02:05 AM
+  ~
+  ~ - 4/06/17 02:06 AM
+  ~ - - Added the color palette to occupy in the application
+  ~
+  ~ - ...
+  ~ - - ...
+  -->
+
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimary01">#FFA6A6</color>
+    <color name="colorPrimary02">#D56767</color>
+    <color name="colorPrimary03">#AC3838</color>
+    <color name="colorPrimary04">#841616</color>
+    <color name="colorPrimary05">#590000</color>
+
+    <color name="colorSecondary01">#FFCFA6</color>
+    <color name="colorSecondary02">#D59967</color>
+    <color name="colorSecondary03">#AC6D38</color>
+    <color name="colorSecondary04">#844816</color>
+    <color name="colorSecondary05">#592800</color>
+
+    <color name="colorTertiary01">#CD86AE</color>
+    <color name="colorTertiary02">#AB5284</color>
+    <color name="colorTertiary03">#8A2D62</color>
+    <color name="colorTertiary04">#6A1243</color>
+    <color name="colorTertiary05">#470028</color>
+
+
 </resources>

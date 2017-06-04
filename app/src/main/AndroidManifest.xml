@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Love-Test - AndroidManifest.xml
+  ~ Create by Izma R. Ramirez - sulisu.co on 4/06/17 02:06 AM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~ Last modified date 4/06/17 02:05 AM
+  ~
+  ~ - 4/06/17 02:06 AM
+  ~ - - ...
+  ~
+  ~ - ...
+  ~ - - ...
+  -->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sulisuco.love_test">
 

@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Love-Test - activity_main.xml
+  ~ Create by Izma R. Ramirez - sulisu.co on 4/06/17 02:06 AM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~ Last modified date 4/06/17 02:05 AM
+  ~
+  ~ - 4/06/17 02:06 AM
+  ~ - - ...
+  ~
+  ~ - ...
+  ~ - - ...
+  -->
+
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
