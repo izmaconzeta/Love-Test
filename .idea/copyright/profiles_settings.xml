@@ -1,0 +1,7 @@
+<component name="CopyrightManager">
+  <settings default="Comment in code">
+    <module2copyright>
+      <element module="All" copyright="Comment in code" />
+    </module2copyright>
+  </settings>
+</component>
