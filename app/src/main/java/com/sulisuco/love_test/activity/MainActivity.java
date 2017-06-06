@@ -1,20 +1,22 @@
 /*
  * Love-Test - MainActivity.java
- * Create by Izma R. Ramirez - sulisu.co on 4/06/17 02:06 AM
+ * Create by Izma R. Ramirez - sulisu.co on 5/06/17 11:54 PM
  * Copyright (c) 2017. All rights reserved.
- * Last modified date 4/06/17 02:05 AM
+ * Last modified date 5/06/17 09:41 PM
  *
- * - 4/06/17 02:06 AM
+ * - 5/06/17 11:54 PM
  * - - ...
  *
  * - ...
  * - - ...
  */
 
-package com.sulisuco.love_test;
+package com.sulisuco.love_test.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.sulisuco.love_test.R;
 
 public class MainActivity extends AppCompatActivity {
 

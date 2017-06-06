@@ -5,8 +5,8 @@
   ~ Copyright (c) 2017. All rights reserved.
   ~ Last modified date 4/06/17 02:05 AM
   ~
-  ~ - 4/06/17 02:06 AM
-  ~ - - ...
+  ~ - 5/06/17 09:46 PM
+  ~ - - The icon to be occupied was defined
   ~
   ~ - ...
   ~ - - ...
@@ -17,12 +17,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/love_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/love_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.LoveActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
