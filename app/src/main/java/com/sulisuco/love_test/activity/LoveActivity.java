@@ -5,7 +5,7 @@
  * Last modified date 5/06/17 11:54 PM
  *
  * - 5/06/17 11:54 PM
- * - - ...
+ * - - The connector to consume the API was created
  *
  * - ...
  * - - ...
@@ -33,10 +33,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
-/**
- * Created by izma on 05/06/17.
- */
 
 public class LoveActivity extends AppCompatActivity {
 
