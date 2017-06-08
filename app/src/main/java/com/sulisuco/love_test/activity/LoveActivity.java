@@ -6,6 +6,8 @@
  *
  * - 5/06/17 11:54 PM
  * - - The connector to consume the API was created
+ * - 7/06/17 10:39 PM
+ * - - Correction of elements name and change of "List <something>" in the request
  *
  * - ...
  * - - ...
@@ -36,38 +38,44 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LoveActivity extends AppCompatActivity {
 
-    EditText et_name_one;
-    EditText et_name_two;
-    TextView percentage;
-    TextView result;
-    Button calculate;
+    TextView rlt_tv_loveTest;
+    TextView rlt_tv_percentage;
+    TextView rlt_tv_result;
 
-    int aux01;
-    int aux02;
+    EditText rlt_et_yourName;
+    EditText rlt_et_hisName;
 
-    String name_one;
-    String name_two;
+    Button rlt_bt_calculate;
+
+    String loveTest;
+    String percentage;
+    String result;
+    String yourName;
+    String hisName;
 
     @Override
     protected void onCreate(Bundle SaveInstanceState){
         super.onCreate(SaveInstanceState);
-        setContentView(R.layout.love_test);
+        setContentView(R.layout.resposive_love_test);
 
-        et_name_one = (EditText) findViewById(R.id.name_one);
-        et_name_two = (EditText) findViewById(R.id.name_two);
-        percentage = (TextView) findViewById(R.id.percentage);
-        result = (TextView) findViewById(R.id.result);
-        calculate = (Button) findViewById(R.id.calculate);
+        rlt_tv_loveTest = (TextView) findViewById(R.id.rlt_tv_loveTest);
+        rlt_tv_percentage = (TextView) findViewById(R.id.rlt_tv_percentage);
+        rlt_tv_result = (TextView) findViewById(R.id.rlt_tv_result);
+        rlt_et_yourName = (EditText) findViewById(R.id.rlt_et_yourName);
+        rlt_et_hisName = (EditText) findViewById(R.id.rlt_et_hisName);
+        rlt_bt_calculate = (Button) findViewById(R.id.rlt_bt_calculate);
 
-        calculate.setOnClickListener(new View.OnClickListener() {
+        rlt_bt_calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                name_one = et_name_one.getText().toString();
-                name_two = et_name_two.getText().toString();
+                yourName = rlt_et_yourName.getText().toString();
+                hisName = rlt_et_hisName.getText().toString();
 
-                Logger.d("%s\n%n", name_one,name_two);
+                Logger.d("yourName: %s\nhisName: %s",yourName,hisName);
+                loveConnector();
             }
         });
+
     }
 
     void loveConnector(){
@@ -78,14 +86,23 @@ public class LoveActivity extends AppCompatActivity {
 
         LoveClient loveClient = retrofit.create(LoveClient.class);
 
-        Call<List<LoveModel>> loveModelCall = loveClient.getLove(name_one,name_two);
+        Call<LoveModel> loveModelCall = loveClient.getLove(yourName,hisName);
 
-        loveModelCall.enqueue(new Callback<List<LoveModel>>() {
+        loveModelCall.enqueue(new Callback<LoveModel>() {
             @Override
-            public void onResponse(Call<List<LoveModel>> call, Response<List<LoveModel>> response) {
+            public void onResponse(Call<LoveModel> call, Response<LoveModel> response) {
                 switch (response.code()){
                     case 200:
                         Logger.d("200");
+                        Logger.d("yourName: %s\nhisName: %s\npercentage: %s\nresult: %s\n",
+                                response.body().getFname(),
+                                response.body().getSname(),
+                                response.body().getPercentage(),
+                                response.body().getResult());
+                        percentage = response.body().getPercentage();
+                        result = response.body().getResult();
+                        rlt_tv_percentage.setText("%" + percentage);
+                        rlt_tv_result.setText(result);
                         TastyToast.makeText(getApplicationContext(), "Petition Successful !", TastyToast.LENGTH_LONG, TastyToast.SUCCESS);
                         break;
 
@@ -118,7 +135,7 @@ public class LoveActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<List<LoveModel>> call, Throwable t) {
+            public void onFailure(Call<LoveModel> call, Throwable t) {
                 Logger.e("Error", t.getMessage());
                 Logger.e(t, "Learn something error");
                 TastyToast.makeText(getApplicationContext(), "Petition Error", TastyToast.LENGTH_LONG, TastyToast.ERROR);

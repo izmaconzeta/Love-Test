@@ -6,6 +6,8 @@
  *
  * - 4/06/17 02:06 AM
  * - - The Retrofit and Logger libraries were added
+ * - 7/06/17 10:39 PM
+ * - - Inclusion of library for "Constraint Layout"
  *
  * - ...
  * - - ...
@@ -53,4 +55,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.7'
 
     compile 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
+
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
 }

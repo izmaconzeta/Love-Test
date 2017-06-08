@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Love-Test - resposive_love_test.xml
+  ~ Create by Izma R. Ramirez - sulisu.co on 7/06/17 09:02 PM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~ Last modified date 7/06/17 09:02 PM
+  ~
+  ~ - 7/06/17 09:02 PM
+  ~ - - Adapting the main view with Responsive Design
+  ~
+  ~ - ...
+  ~ - - ...
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_v_000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.0" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_v_010"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_v_025"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_v_050"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_v_075"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_v_090"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_v_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1.0" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_h_000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.0" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_h_005"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_h_025"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_h_050"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_h_075"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_h_095"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_h_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1.0" />
+
+        <TextView
+            android:id="@+id/rlt_tv_loveTest"
+            android:layout_width="0dp"
+            android:layout_height="17dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:text="Love Test"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/gl_h_025"
+            app:layout_constraintLeft_toLeftOf="@+id/gl_v_010"
+            app:layout_constraintRight_toLeftOf="@+id/gl_v_090"
+            app:layout_constraintTop_toTopOf="@+id/gl_h_005"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <EditText
+            android:id="@+id/rlt_et_yourName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Your name"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/gl_h_050"
+            app:layout_constraintLeft_toLeftOf="@+id/gl_v_010"
+            app:layout_constraintRight_toLeftOf="@+id/gl_v_050"
+            app:layout_constraintTop_toTopOf="@+id/gl_h_025" />
+
+        <EditText
+            android:id="@+id/rlt_et_hisName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="His name"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/gl_h_050"
+            app:layout_constraintLeft_toLeftOf="@+id/gl_v_050"
+            app:layout_constraintRight_toLeftOf="@+id/gl_v_090"
+            app:layout_constraintTop_toTopOf="@+id/gl_h_025" />
+
+        <TextView
+            android:id="@+id/rlt_tv_percentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/gl_v_010"
+            app:layout_constraintRight_toLeftOf="@+id/gl_v_090"
+            app:layout_constraintTop_toTopOf="@+id/gl_h_075"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/rlt_tv_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/gl_v_010"
+            app:layout_constraintRight_toLeftOf="@+id/gl_v_090"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/gl_h_095"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/rlt_tv_percentage"
+            app:layout_constraintVertical_bias="0.745" />
+
+        <Button
+            android:id="@+id/rlt_bt_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Calculate"
+            app:layout_constraintLeft_toLeftOf="@+id/gl_v_010"
+            app:layout_constraintRight_toLeftOf="@+id/gl_v_090"
+            app:layout_constraintTop_toTopOf="@+id/gl_h_050"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/gl_h_075" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

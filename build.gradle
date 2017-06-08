@@ -4,8 +4,8 @@
  * Copyright (c) 2017. All rights reserved.
  * Last modified date 4/06/17 02:05 AM
  *
- * - 4/06/17 02:06 AM
- * - - ...
+ * - 7/06/17 10:39 PM
+ * - - Google repository inclusion
  *
  * - ...
  * - - ...
@@ -28,6 +28,9 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        maven {
+            url 'https://maven.google.com'
+        }
     }
 }
 
